@@ -114,8 +114,11 @@ public class DogHouseTest {
 
         DogHouse.add(dog9);
         DogHouse.add(dog10);
+        DogHouse.add(dog10);
+        DogHouse.add(dog10);
+        DogHouse.add(dog10);
 
-        Integer expectedNumOfDogs = 8;
+        Integer expectedNumOfDogs = 5;
         Integer actualNumOfDogs = DogHouse.getNumberOfDogs();
 
         Assert.assertEquals(expectedNumOfDogs,actualNumOfDogs);

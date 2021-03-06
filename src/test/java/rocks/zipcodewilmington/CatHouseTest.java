@@ -102,6 +102,7 @@ public class CatHouseTest {
 
     @Test
     public void numberOfCatsTest(){
+
         String catName9 = "Garfield";
         Date catDate9 = new Date();
         int catId9 = 9;
@@ -112,10 +113,11 @@ public class CatHouseTest {
         int catId10 = 10;
         Cat cat10 = new Cat(catName10,catDate10,catId10);
 
+        CatHouse.clear();
         CatHouse.add(cat9);
         CatHouse.add(cat10);
 
-        Integer expectedNumOfCats = 8;
+        Integer expectedNumOfCats = 2;
         Integer actualNumOfCats = CatHouse.getNumberOfCats();
 
         Assert.assertEquals(expectedNumOfCats,actualNumOfCats);
